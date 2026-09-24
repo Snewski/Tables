@@ -1,0 +1,32 @@
+---
+title: "My Table"
+output: pdf_document
+---
+
+
+
+```{r, results='asis', echo=FALSE}
+cat("
+\\begin{table}[ht]
+\\centering
+\\begin{tabular}{llll}
+\\hline
+\\textbf{Rank} & \\textbf{Technology} & \\textbf{Why losing it is bad} & \\textbf{Self-imposed?} \\\\
+\\hline
+1  & Email / Gmail     & Identity layer, university, work, logins    & No \\\\
+2  & MobilePay         & Default payment method between people       & Partially \\\\
+3  & Rejsekort / DSB   & Transport becomes inconvenient              & No \\\\
+4  & Messenger         & Lose contact with friends                   & Partially \\\\
+5  & Watch app         & Would not wake up in time                   & Yes \\\\
+6  & Payment terminals & Must rely on MobilePay or cash              & No \\\\
+7  & Google Chrome     & Lose preferences, shortcuts                 & Yes \\\\
+8  & WhatsApp          & Lose international communication            & Partially \\\\
+9  & YouTube           & Entertainment/Educational material loss     & Yes \\\\
+10 & WiFi login        & Must rely on mobile data                    & No \\\\
+\\hline
+\\end{tabular}
+\\end{table}
+")
+
+```
+
